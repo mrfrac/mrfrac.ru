@@ -4,7 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "parcel src/index.html --out-dir docs"
+    "build": "npm run clean && parcel build src/index.html --out-dir docs",
+    "watch": "npm run clean && parcel src/index.html watch --out-dir docs",
+    "clean": "rm -rf ./docs/*"
+  },
+  "dependencies": {
+    "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
