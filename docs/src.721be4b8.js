@@ -4,4 +4,4 @@ var t;!function(o,s){"object"==typeof exports&&"undefined"!=typeof module?s(expo
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("game-of-life"),t={cols:400,rows:400,color:"gray"},n=new e.Game("gameCanvas",t),o=void 0;function a(){o||(o=1),l(),document.getElementById("overlay").style.display="none",document.getElementById("gameCanvas").classList.remove("blured")}function d(){o=void 0,t.color="#"+function e(t,n,o){return n[t.floor(t.random()*n.length)]+(o&&e(t,n,o-1))}(Math,"0123456789ABCDEF",4),n=new e.Game("gameCanvas",t)}function l(){o&&(n.liveOut(),window.requestAnimationFrame(l))}document.getElementById("playButton").addEventListener("click",a),document.getElementById("pauseButton").addEventListener("click",function(){document.getElementById("gameCanvas").classList.add("blured"),document.getElementById("overlay").style.display="",o=void 0}),document.getElementById("resetButton").addEventListener("click",d);
 },{"game-of-life":"5cDO"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.721be4b8.js.map
+//# sourceMappingURL=src.721be4b8.js.map

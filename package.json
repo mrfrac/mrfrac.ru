@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && parcel build src/index.html --out-dir docs",
+    "build": "npm run clean && parcel build src/index.html --out-dir docs --public-url ./",
     "watch": "npm run clean && parcel src/index.html watch --out-dir docs",
     "clean": "rm -rf ./docs/*"
   },
