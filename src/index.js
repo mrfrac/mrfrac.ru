@@ -9,22 +9,24 @@ const params = {
 let game = new Game("gameCanvas", params);
 let gameStarted = undefined;
 
+const canvasElement = document.getElementById("gameCanvas");
+const overlayElement = document.getElementById("overlay");
+
 document.getElementById("playButton").addEventListener("click", play);
 
-document.getElementById("pauseButton").addEventListener("click", () => {
-    document.getElementById("gameCanvas").classList.add("blured");
-    document.getElementById("overlay").style.display = "";
-    gameStarted = undefined;
-});
+document.getElementById("pauseButton").addEventListener("click", pause);
 
-document.getElementById("resetButton").addEventListener("click", reset);
+document.getElementById("resetButton").addEventListener("click", () => {
+    pause();
+    reset();
+});
 
 function play() {
     if (!gameStarted) gameStarted = 1;
     playGame();
 
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("gameCanvas").classList.remove("blured")
+    overlayElement.style.display = "none";
+    canvasElement.classList.remove("blured")
 }
 
 function reset() {
@@ -33,6 +35,12 @@ function reset() {
         return s[m.floor(m.random() * s.length)] + (c && lol(m, s, c - 1));
     })(Math, '0123456789ABCDEF', 4);
     game = new Game("gameCanvas", params);
+}
+
+function pause() {
+    canvasElement.classList.add("blured");
+    overlayElement.style.display = "";
+    gameStarted = undefined;
 }
 
 function playGame() {

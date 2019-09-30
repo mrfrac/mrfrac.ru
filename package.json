@@ -1,12 +1,13 @@
 {
   "name": "mrfrac.ru",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Personal web site",
+  "author": "mrfrac <fracturer@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "npm run clean && parcel build src/index.html --out-dir docs --public-url ./",
     "watch": "npm run clean && parcel src/index.html watch --out-dir docs",
-    "clean": "rm -rf ./docs/*"
+    "clean": "rm -rf docs/*.{map,js,html}"
   },
   "dependencies": {
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
