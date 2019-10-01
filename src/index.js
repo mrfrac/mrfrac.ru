@@ -11,6 +11,7 @@ let gameStarted = undefined;
 
 const canvasElement = document.getElementById("gameCanvas");
 const overlayElement = document.getElementById("overlay");
+const cardElement = document.getElementById("card");
 
 document.getElementById("playButton").addEventListener("click", play);
 
@@ -26,6 +27,7 @@ function play() {
     playGame();
 
     overlayElement.style.display = "none";
+    cardElement.style.display = "none";
     canvasElement.classList.remove("blured")
 }
 
@@ -40,6 +42,7 @@ function reset() {
 function pause() {
     canvasElement.classList.add("blured");
     overlayElement.style.display = "";
+    cardElement.style.display = "";
     gameStarted = undefined;
 }
 
