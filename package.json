@@ -7,12 +7,13 @@
   "scripts": {
     "build": "npm run clean && parcel build src/index.html --out-dir docs --public-url ./",
     "watch": "npm run clean && parcel src/index.html watch --out-dir docs",
-    "clean": "rm -rf docs/*.{map,js,html,png}"
+    "clean": "rm -rf docs/*.{map,js,html,png,css}"
   },
   "dependencies": {
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.23.0"
   }
 }

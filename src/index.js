@@ -1,3 +1,5 @@
+import "./styles.scss";
+
 import { Game } from "game-of-life"
 
 const params = {
