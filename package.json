@@ -13,7 +13,16 @@
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
   },
   "devDependencies": {
+    "husky": "2.7.0",
     "parcel-bundler": "^1.12.3",
     "sass": "^1.23.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "npm run build",
+        "git add docs/*"
+      ]
+    }
   }
 }
