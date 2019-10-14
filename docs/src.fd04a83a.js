@@ -6,4 +6,4 @@ var t;!function(o,s){"object"==typeof exports&&"undefined"!=typeof module?s(expo
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.scss");var e=require("game-of-life"),t={cols:400,rows:400,color:"gray"},n=new e.Game("gameCanvas",t),o=void 0,a=document.getElementById("gameCanvas"),d=document.getElementById("overlay"),s=document.getElementById("card");function l(){o||(o=1),r(),d.style.display="none",s.style.display="none",a.classList.remove("blured")}function i(){o=void 0,t.color="#"+function e(t,n,o){return n[t.floor(t.random()*n.length)]+(o&&e(t,n,o-1))}(Math,"0123456789ABCDEF",4),n=new e.Game("gameCanvas",t)}function c(){a.classList.add("blured"),d.style.display="",s.style.display="",o=void 0}function r(){o&&(n.liveOut(),window.requestAnimationFrame(r))}document.getElementById("playButton").addEventListener("click",l),document.getElementById("pauseButton").addEventListener("click",c),document.getElementById("resetButton").addEventListener("click",function(){c(),i()});
 },{"./styles.scss":"I4sy","game-of-life":"5cDO"}]},{},["Focm"], null)
-//# sourceMappingURL=src.d13ff920.js.map
+//# sourceMappingURL=src.fd04a83a.js.map
