@@ -9,15 +9,14 @@ const params = {
 };
 
 let game = new Game("gameCanvas", params);
-let gameStarted = undefined;
+let gameStarted = false;
 
 const canvasElement = document.getElementById("gameCanvas");
 const overlayElement = document.getElementById("overlay");
 const cardElement = document.getElementById("card");
+const playButton = document.getElementById("playButton");
 
 document.getElementById("playButton").addEventListener("click", play);
-
-document.getElementById("pauseButton").addEventListener("click", pause);
 
 document.getElementById("resetButton").addEventListener("click", () => {
     pause();
@@ -25,12 +24,18 @@ document.getElementById("resetButton").addEventListener("click", () => {
 });
 
 function play() {
-    if (!gameStarted) gameStarted = 1;
-    playGame();
+    if (!gameStarted) {
+        gameStarted = true;
+        playGame();
 
-    overlayElement.style.display = "none";
-    cardElement.style.display = "none";
-    canvasElement.classList.remove("blured")
+        overlayElement.style.display = "none";
+        cardElement.style.display = "none";
+        canvasElement.classList.remove("blured")
+        playButton.innerText = "Pause";
+    } else {
+        pause();
+        playButton.innerText = "Play";
+    }
 }
 
 function reset() {
