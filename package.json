@@ -5,21 +5,15 @@
   "author": "mrfrac <fracturer@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && parcel build src/index.html --out-dir docs --public-url ./",
-    "watch": "npm run clean && parcel src/index.html watch --out-dir docs",
-    "clean": "rm -rf docs/*.{map,js,html,png,css}"
+    "build": "npm run clean && parcel build src/index.html --out-dir build --public-url ./",
+    "watch": "npm run clean && parcel src/index.html watch --out-dir build",
+    "clean": "rm -rf build/*.{map,js,html,png,css}"
   },
   "dependencies": {
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
   },
   "devDependencies": {
-    "husky": "2.7.0",
     "parcel-bundler": "^1.12.3",
     "sass": "^1.23.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build  && git add docs/*"
-    }
   }
 }
