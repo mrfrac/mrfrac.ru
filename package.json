@@ -7,7 +7,8 @@
   "scripts": {
     "build": "npm run clean && parcel build src/index.html --out-dir build --public-url ./",
     "watch": "npm run clean && parcel src/index.html watch --out-dir build",
-    "clean": "rm -rf build/*.{map,js,html,png,css}"
+    "clean": "rm -rf build/*.{map,js,html,png,css}",
+    "test": "echo 'None'"
   },
   "dependencies": {
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
