@@ -2572,13 +2572,13 @@ function-bind@^1.1.1:
 
 "game-of-life@git+https://github.com/mrfrac/game-of-life.git":
   version "1.0.1"
-  uid "64ae459a80ad794552a55a259f3abd2d0ed59a05"
-  resolved "git+https://github.com/mrfrac/game-of-life.git#64ae459a80ad794552a55a259f3abd2d0ed59a05"
+  uid "06b2650bbf4acda20a9cbb80796605890a01c481"
+  resolved "git+https://github.com/mrfrac/game-of-life.git#06b2650bbf4acda20a9cbb80796605890a01c481"
   dependencies:
     add "^2.0.6"
     rimraf "^3.0.2"
     rollup "^1.32.1"
-    rollup-plugin-typescript2 "^0.28.0"
+    rollup-plugin-typescript2 "^0.29.0"
     rollup-plugin-uglify "^6.0.4"
     tslib "^2.0.3"
     typescript "^4.0.5"
@@ -4822,10 +4822,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-typescript2@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-typescript2/-/rollup-plugin-typescript2-0.28.0.tgz#5638553655aa6735d18f2e5c09acaac481eb65eb"
-  integrity sha512-kk+146r8LfvsscytH94W1zgKrNx2anvC5AQReBtkE8WowBWuoFCIFoULUrC+DI5Ga4zVrCaBk6MUq3GZGTcLnQ==
+rollup-plugin-typescript2@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-typescript2/-/rollup-plugin-typescript2-0.29.0.tgz#b7ad83f5241dbc5bdf1e98d9c3fca005ffe39e1a"
+  integrity sha512-YytahBSZCIjn/elFugEGQR5qTsVhxhUwGZIsA9TmrSsC88qroGo65O5HZP/TTArH2dm0vUmYWhKchhwi2wL9bw==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     find-cache-dir "^3.3.1"
