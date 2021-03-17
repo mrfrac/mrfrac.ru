@@ -14,7 +14,7 @@
     "game-of-life": "git+https://github.com/mrfrac/game-of-life.git"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.32.8"
   }
 }
