@@ -2566,8 +2566,8 @@ function-bind@^1.1.1:
 
 "game-of-life@git+https://github.com/mrfrac/game-of-life.git":
   version "1.0.1"
-  uid "6ebd123a97a9852f77597b35cf16217894afd1dd"
-  resolved "git+https://github.com/mrfrac/game-of-life.git#6ebd123a97a9852f77597b35cf16217894afd1dd"
+  uid "1d64bf6bf04e1efb6e8fa7da06e176c48b78cadb"
+  resolved "git+https://github.com/mrfrac/game-of-life.git#1d64bf6bf04e1efb6e8fa7da06e176c48b78cadb"
   dependencies:
     add "^2.0.6"
     rimraf "^3.0.2"
@@ -2575,7 +2575,7 @@ function-bind@^1.1.1:
     rollup-plugin-typescript2 "^0.30.0"
     rollup-plugin-uglify "^6.0.4"
     tslib "^2.2.0"
-    typescript "^4.2.4"
+    typescript "^4.3.4"
     yarn "^1.22.10"
 
 gauge@~2.7.3:
@@ -5471,10 +5471,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript@^4.3.4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
+  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
 
 uglify-js@^3.4.9:
   version "3.6.0"
